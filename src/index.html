@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07090b">
+<title>ARVX Révisions — Nombres complexes</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Révisions">
+<link rel="stylesheet" href="vendor/katex.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <button class="tb-btn" id="btnBack" aria-label="Retour" hidden>←</button>
+    <div class="tb-title">
+      <span class="tb-brand">ARVX <em>Révisions</em></span>
+      <span class="tb-sub" id="tbSub">Nombres complexes — Terminale D</span>
+    </div>
+    <button class="tb-btn install" id="btnInstall" hidden title="Installer l'application">⤓</button>
+    <div class="tb-progress" id="tbProgress" title="Corrections consultées">
+      <span id="tbProgNum">0/25</span>
+    </div>
+  </header>
+
+  <main class="stage" id="stage">
+    <!-- les vues se rendent ici, sans jamais recharger la page -->
+  </main>
+
+  <nav class="botbar" id="botbar">
+    <button class="bb-btn" id="btnHome">
+      <span class="bb-ico">⌂</span><span class="bb-txt">Accueil</span>
+    </button>
+    <button class="bb-btn" id="btnResume" hidden>
+      <span class="bb-ico">↻</span><span class="bb-txt">Reprendre</span>
+    </button>
+    <div class="bb-status" id="bbStatus" title="État de la connexion">
+      <span class="dot" id="bbDot"></span><span id="bbTxt">…</span>
+    </div>
+  </nav>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="vendor/katex.min.js"></script>
+  <script src="vendor/auto-render.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/data_g1.js"></script>
+  <script src="js/data_g2.js"></script>
+  <script src="js/data_g3.js"></script>
+  <script src="js/arvx-ai.js"></script>
+  <script src="js/pwa.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
